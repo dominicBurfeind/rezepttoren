@@ -1,0 +1,210 @@
+body {
+  font-family: Roboto, 'Helvetica';
+}
+
+.active {
+  color: green;
+}
+
+/* Navbar */
+.nav-custom {
+  box-shadow: 0px 2px 10px #7d7d7d8e;
+}
+
+.nav-toggle-custom {
+  background-color: green;
+}
+
+.nav-custom svg {
+  width: 30px;
+  margin: 5px 0;
+}
+
+.nav-custom svg:hover {
+  color: green;
+}
+
+.nav-custom .nav-item {
+  transition: all 0.3s;
+}
+
+.nav-custom .nav-item:hover {
+  transform: translateY(-5px);
+}
+
+.icons-menu-custom .nav-link {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#navSearch {
+  width: 300px;
+  border-radius: 4px;
+  border-color: rgba(128, 128, 128, 0.525);
+}
+
+#navSearch::placeholder {
+  font-size: 13px;
+}
+
+.btn-search-custom {
+  border-radius: 14px;
+}
+
+.btn-search-custom svg {
+  width: 30px;
+  transition: all 0.3s;
+  color: #7e7e7e;
+}
+
+.btn-search-custom svg:hover {
+  transform: translateY(-5px);
+  color: green;
+}
+
+/* Header */
+.header-container {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.header-container img {
+  filter: brightness(50%);
+  position: absolute;
+  z-index: -99;
+  object-fit: fill;
+}
+
+.header-text {
+  position: relative;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: Poppins;
+}
+
+#headerSearch {
+  width: 50vw;
+  text-align: center;
+}
+
+.header-search-container {
+  padding-bottom: 20px;
+}
+
+.header-btn svg {
+  width: 30px;
+  margin: 5px;
+}
+
+/* Rezepte */
+.rezepte h2 {
+  font-size: 2rem;
+  padding-top: 60px;
+  font-family: Poppins;
+}
+
+.rezepte-container {
+  padding: 50px 0;
+}
+
+.rezept {
+  margin: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.361);
+}
+
+.rezept img {
+  padding: 15px 5px;
+  border-radius: 5px;
+}
+
+.rezept-btn {
+  position: relative; 
+}
+
+#searchName::first-letter {
+  text-transform: capitalize;
+}
+
+#displayText {
+  opacity: 0.6;
+  font-size: 14px;
+  margin: 100px;
+}
+
+.bookmark-btn {
+  transition: all 0.2s;
+  border: none;
+  background: none;
+}
+
+.bookmark-btn:hover {
+  color: black;
+}
+
+.bookmark-btn:active {
+  transform: translateY(10px);
+  color: black;
+}
+
+/* BMI rechner */
+#Bmi-Rechner {
+  margin: 50px 0;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+
+  #navSearch {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .header-container {
+    height: auto;
+  }
+  header h1 {
+    font-size: 1.5rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+    padding: 1.25rem;
+  }
+
+  #headerSearch {
+    max-width: 80vw; /* Suchleiste breiter auf mobilen Geräten */
+  }
+
+  #headerSearch::placeholder {
+    font-size: 13px;
+  }
+
+  .header-btn svg {
+    width: 25px; /* Verkleinert das Icon */
+  }
+
+  .nav-custom svg {
+    width: 35px;
+  }
+  #carouselExample {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons-menu-custom .nav-link {
+    font-size: 10px; /* Kleinere Schriftgröße im Navbar */
+    margin: 0 20px; /* Geringere Abstände */
+  }
+}
+
+
