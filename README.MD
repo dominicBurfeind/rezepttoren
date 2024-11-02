@@ -14,8 +14,9 @@ Rezepttoren ist eine einfache Webanwendung, mit der Benutzer nach Rezepten über
 ## Verwendete Technologien
 
 - **HTML**: Zur Strukturierung des Inhalts.
-- **CSS**: Für das Styling und responsives Design.
+- **CSS**: Für das Styling.
 - **JavaScript**: Für die Verarbeitung von API-Interaktionen, Lesezeichen und die BMI-Berechnung.
+- **Bootstrap**: Für das responsive layout und für die Komponente.
 - **Edamam API**: Um Rezepte aus der Rezeptdatenbank von Edamam abzurufen.
 
 ## Einrichtung und Installation
